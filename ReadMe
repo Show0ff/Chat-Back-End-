@@ -1,0 +1,9 @@
+Chat with authorization.
+
+This application allows you to exchange messages in a general chat
+
+Technologies: Java, Spring boot, Servlets, Angular, MySQL
+
+To start the chat, download the server part and the client part https://github.com/Show0ff/Chat-Front-End-
+
+Also connect and initialize the database with a script located in the resources folder
