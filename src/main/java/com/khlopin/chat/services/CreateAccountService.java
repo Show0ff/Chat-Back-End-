@@ -12,6 +12,7 @@ public class CreateAccountService {
         User clientUser = gson.fromJson(dataFromFront, User.class);
         if (DBRepository.findUserFromDbByLogin(clientUser.getLogin()) == null) {
             DBRepository.addUserInDB(clientUser);
+            OwnerOfMessageService.name = clientUser.getLogin();
             return Access.TRUE;
         }
         return Access.FALSE;
