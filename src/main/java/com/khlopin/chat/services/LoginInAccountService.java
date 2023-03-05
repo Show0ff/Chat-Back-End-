@@ -15,7 +15,7 @@ public class LoginInAccountService {
         if (userFromDbByLogin != null
                 && userFromDbByLogin.getLogin().equals(clientUser.getLogin())
                 && userFromDbByLogin.getPassword().equals(clientUser.getPassword())) {
-            OwnerOfMessageService.name = userFromDbByLogin.getLogin();
+
             access = Access.TRUE;
         } else {
             access = Access.FALSE;

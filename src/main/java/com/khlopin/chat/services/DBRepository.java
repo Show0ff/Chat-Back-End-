@@ -14,6 +14,7 @@ public class DBRepository {
     private static final String LOGIN_FOR_DB = "root";
     private static final String PASSWORD_FOR_DB = "123456";
 
+    //TODO добавить код, который будет отлавливать Execption и делать rollBack, так же отключить autoComit
 
     @SneakyThrows
     public static List<Message> getMessageList() {
@@ -94,4 +95,5 @@ public class DBRepository {
     private static Connection connect() {
         return DriverManager.getConnection(URL_FOR_DB, LOGIN_FOR_DB, PASSWORD_FOR_DB);
     }
+
 }

@@ -1,11 +1,10 @@
-package com.khlopin.chat.controllers;
+package com.khlopin.chat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
+
 
 @SpringBootApplication
-@ServletComponentScan
 public class BackEndForChatApplication {
 
 	public static void main(String[] args) {
